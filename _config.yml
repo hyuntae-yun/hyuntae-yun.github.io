@@ -1,4 +1,4 @@
-baseurl: "/tae's log" # the subpath of your site, e.g. /blog
+baseurl: "/taeblog" # the subpath of your site, e.g. /blog
 url: "https://hyuntae-yun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 

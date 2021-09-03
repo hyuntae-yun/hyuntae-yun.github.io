@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: hyuntae.jpg
+image: about.jpg
 ---
 
 Hello, my name is hyun tae yun. I really enjoy exploring new concepts of knownledge. I started my career in computer science, but my goal is to become a data scientist.

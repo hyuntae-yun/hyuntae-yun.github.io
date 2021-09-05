@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Relation between covid-19 clade and confirmed case"
+title:  "Relation between covid-19 clade and confirmed cases"
 date:   2020-10-08 11:47:55 +0300
 image:  covid-19-1.png
 tags:   Jekyll

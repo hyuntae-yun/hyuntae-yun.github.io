@@ -3,7 +3,7 @@ layout: post
 title:  "Relation between covid-19 clade and confirmed cases"
 date:   2020-10-08 11:47:55 +0300
 image:  covid-19-1.png
-tags:   Jekyll
+tags:   Covid19, comfirmed case, data science
 ---
 
 Covid-19 바이러스가 처음 터져 나왔을 때,  내가 처음 접했던 것은 Youtube와 뉴스였다. 굉장히 많은 이야기들이 있었는데, 그 중에서도 한 의사 분이 나와서 논물을 우리에게 풀어서 설명해 주시는 채널이 있었는데, 그것을 읽으면서 Covid-19 바이러스에 대해서 어느정도 알 수 있었다. 하지만 내가 생물학자 전공도 아니고, 거기서 나온 모든 것들을 이해할 수 없었지만, 지금 나에게는 '통계'라는 무기가 있다.

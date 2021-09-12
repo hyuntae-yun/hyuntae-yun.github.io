@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Exploring to the TadGAN-intro"
 date:   2021-09-12 16:04:19 +0300
 image:  tadgan.png
 tags:   Tadgan

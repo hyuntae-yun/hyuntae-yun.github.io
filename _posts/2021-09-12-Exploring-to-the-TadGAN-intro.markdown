@@ -14,7 +14,10 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 ![]({{ site.baseurl }}/images/cycleganx.png)
 ![]({{ site.baseurl }}/images/tadgan0.png)
 
- 그래프를 보면 조금 더 쉽게 비교가 가능합니다. 처음 볼 수 있는 그림은 cyclegan의 원본을 시계열 데이터에 맞춰서 변경한 것입니다. 원본 시계열과 재생성된 시계열을 검사하는 {C_x}가 추가된 것 말고는 굉장히 흡사하게 보입니다. 
+ 그래프를 보면 조금 더 쉽게 비교가 가능합니다. 처음 볼 수 있는 그림은 cyclegan의 원본을 시계열 데이터에 맞춰서 변경한 것입니다. 원본 시계열과 재생성된 시계열을 검사하는 ![formula](https://render.githubusercontent.com/render/math?math=C_x)가 추가된 것 말고는 굉장히 흡사하게 보입니다. 
+ 
+ 
+ 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

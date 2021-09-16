@@ -11,6 +11,10 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 
  하지만 Tadgan은 GAN(Generative Adversarial Networks)중에서도 Cycle Consistency Loss을 사용해서 Auto Encoder와 비슷한 효과를 내는 것이 차별점 입니다. 즉, 시계열을 생성하고 이 시계열이 참고한 실제 데이터와 얼마나 비슷한 지를 확인하는 과정을 거칩니다. 이 과정을 통해서 우리는 조금 더 높은 성능을 자랑하는 오토 인코더 형태의 모델을 만들 수 있게 되었습니다.
 
+![]({{ site.baseurl }}/images/cycleganx.png)
+![]({{ site.baseurl }}/images/tadgan0.png)
+
+ 그래프를 보면 조금 더 쉽게 비교가 가능합니다. 처음 볼 수 있는 그림은 cyclegan의 원본을 시계열 데이터에 맞춰서 변경한 것입니다. 원본 시계열과 재생성된 시계열을 검사하는 Cx가 추가된 것 말고는 굉장히 흡사하게 보입니다. 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

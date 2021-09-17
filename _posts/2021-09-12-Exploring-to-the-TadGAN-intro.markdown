@@ -13,7 +13,7 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
  
  ###1. Proximity-based methods
  ![]({{ site.baseurl }}/images/Proximity.jpg)
- 가장 먼저, 
+ 가장 먼저, 근접도 기반 방법입니다. 우리가 주로 알고 있는 clutering이 대표적인데, 각 데이터 요소들간의 거리를 계산하고, 이를 바탕으로 근접도를 판단을 합니다. 근접도가 커지면 커질 수록 멀리 있다는 뜻이기 때문에 여러가지 제약조건을 통해서 outlier을 결정할 수 있습니다.
 
 
 ###2. Predict-based methods

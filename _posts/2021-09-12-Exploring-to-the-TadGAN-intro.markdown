@@ -22,7 +22,7 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 ###3. Reconstuction-based methods
  ![]({{ site.baseurl }}/images/reconstruction.png)
 
- 하지만 Tadgan은 GAN(Generative Adversarial Networks)중에서도 Cycle Consistency Loss을 사용해서 Auto Encoder와 비슷한 효과를 내는 것이 차별점 입니다. 즉, 시계열을 생성하고 이 시계열이 참고한 실제 데이터와 얼마나 비슷한 지를 확인하는 과정을 거칩니다. 이 과정을 통해서 우리는 조금 더 높은 성능을 자랑하는 오토 인코더 형태의 모델을 만들 수 있게 되었습니다.
+ 위의 방법중에서 TadGAN은 마지막 방법인 Reconsturction-based methods를 통해 이상치를 판별합니다. TadGAN은 이런 reconsturction method를 CycleGAN에 사용된 기법을 이용해 진행하는 모델입니다. 먼저 CycleGAN에 대해서 이야기해 보자면, CycleGAN은 짝지어진 데이터가 굉장히 다르더라도 유사점을 찾아내 비슷한 형태로 나타낼 수 있습니다. 이미지로 예를 들면, 말이 초원을 달리는 모습이 담긴 사진과 얼룩말이 서있는 모습이 담긴 사진은 학습하기가 불가능 합니다. 얼룩말과 말의 주변환경도 굉장히 다르고, 동일한 특성은 오로지 '말의 특징을 가진 오브젝트' 밖에 없습니다. cycleGAN은 우선 각 데이터가 가진 공통된 특징을 잘 찾아내고, 거기에 더 나아가 원본데이터의 특성을 유지시키는 방향으로 학습을 진행시킵니다. 
 
 ![]({{ site.baseurl }}/images/cycleganx.png)
 ![]({{ site.baseurl }}/images/tadgan0.png)

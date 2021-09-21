@@ -13,16 +13,19 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
  
  ###1. Proximity-based methods
  ![]({{ site.baseurl }}/images/Proximity.jpg)
- 가장 먼저, 근접도 기반 방법입니다. 우리가 주로 알고 있는 clutering이 대표적인데, 각 데이터 요소들간의 거리를 계산하고, 이를 바탕으로 근접도를 판단을 합니다. 근접도가 커지면 커질 수록 멀리 있다는 뜻이기 때문에 여러가지 제약조건을 통해서 outlier을 결정할 수 있습니다.
+ 가장 먼저, 근접도 기반 방법입니다. 우리가 주로 알고 있는 clutering이 대표적인데, 각 데이터 요소들간의 거리를 계산하고, 이를 바탕으로 근접도를 판단을 합니다. 근접도가 커지면 커질 수록 멀리 있다는 뜻이기 때문에 여러가지 제약조건을 통해서 outlier을 결정할 수 있습니다. 
 
 
 ###2. Predict-based methods
  ![]({{ site.baseurl }}/images/predict.jpg)
+ 예측 기반 방법입니다. ARIMA가 가장 대표적인데요, 시점  t-1까지의 데이터를 활용해서 시점 t를 예측합니다. 그리고 실제 값이 예측값과 얼마나 다른지를 보고 이상치인지 아닌지를 판별합니다. 세가지 방법중에서는 난이도가 가장 높은 편이라고 할 수 있습니다.
+ 
  
 ###3. Reconstuction-based methods
  ![]({{ site.baseurl }}/images/reconstruction.png)
+ 재생성 기반 방법입니다. Auto Encoder이 가장 대표적입니다. 여러개의 특징(다변량 혹은 시계열데이터)을 Encoder을 통해 latent space로 압축시키고, 이후 Decoder을 통과해 원래 데이터로 복원하게 되는데, 이때 Auto Encoder은 그 데이터의 특징을 학습한 상태임으로 이상치가 포함된 데이터라면 복원이 잘 되어있지 않을 것입니다. 그래서 복원된 데이터와 원본 데이터의 차이를 비교해서 이상치를 추정하게 됩니다.
 
- 위의 방법중에서 TadGAN은 마지막 방법인 Reconsturction-based methods를 통해 이상치를 판별합니다. TadGAN은 이런 reconsturction method를 CycleGAN에 사용된 기법을 이용해 진행하는 모델입니다. 먼저 CycleGAN에 대해서 이야기해 보자면, CycleGAN은 짝지어진 데이터가 굉장히 다르더라도 유사점을 찾아내 비슷한 형태로 나타낼 수 있습니다. 이미지로 예를 들면, 말이 초원을 달리는 모습이 담긴 사진과 얼룩말이 서있는 모습이 담긴 사진은 학습하기가 불가능 합니다. 얼룩말과 말의 주변환경도 굉장히 다르고, 동일한 특성은 오로지 '말의 특징을 가진 오브젝트' 밖에 없습니다. cycleGAN은 우선 각 데이터가 가진 공통된 특징을 잘 찾아내고, 거기에 더 나아가 원본데이터의 특성을 유지시키는 방향으로 학습을 진행시킵니다. 
+ 위의 방법중에서 TadGAN은 마지막 방법인 Reconsturction-based methods를 통해 이상치를 판별합니다. 조금 더 나아가서 TadGAN은 이런 reconsturction method를 CycleGAN에 사용된 기법을 이용해 진행하는 모델입니다. 먼저 CycleGAN에 대해서 이야기해 보자면, CycleGAN은 짝지어진 데이터가 굉장히 다르더라도 유사점을 찾아내 비슷한 형태로 나타낼 수 있습니다. 이미지로 예를 들면, 말이 초원을 달리는 모습이 담긴 사진과 얼룩말이 서있는 모습이 담긴 사진은 학습하기가 불가능 합니다. 얼룩말과 말의 주변환경도 굉장히 다르고, 동일한 특성은 오로지 '말의 특징을 가진 오브젝트' 밖에 없습니다. cycleGAN은 우선 각 데이터가 가진 공통된 특징을 잘 찾아내고, 거기에 더 나아가 원본데이터의 특성을 유지시키는 방향으로 학습을 진행시킵니다. 
 
 ![]({{ site.baseurl }}/images/cycleganx.png)
 ![]({{ site.baseurl }}/images/tadgan0.png)

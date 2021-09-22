@@ -31,6 +31,7 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 ![]({{ site.baseurl }}/images/tadgan0.png)
 
  그래프를 보면 조금 더 쉽게 비교가 가능합니다. 처음 볼 수 있는 그림은 cyclegan의 원본을 시계열 데이터에 맞춰서 변경한 것입니다. 원본 시계열과 재생성된 시계열을 검사하는 ![formula](https://render.githubusercontent.com/render/math?math=C_x)가 추가된 것 말고는 굉장히 흡사하게 보입니다. 
+
  
  
  

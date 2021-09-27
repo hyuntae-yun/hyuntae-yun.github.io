@@ -12,7 +12,9 @@ TadGAN은 loss function을 굉장히 중요하게 생각했습니다. 기존의 
 GAN의 기본적인 loss function으로 부터 어떻게 KL divergence , JSD divergence를 유도하는지를 잘 나타냈는데 두 공식을 표현하자면 아래와 같습니다.
 
 ![formula](https://render.githubusercontent.com/render/math?math=KL(P \parallel Q)= \sum_xP(x)log\frac{P(x)}{Q(x)})
+
 ![formula](https://render.githubusercontent.com/render/math?math=A+B)
+
 ![formula](https://render.githubusercontent.com/render/math?math={JSD}(P \| Q)={{\frac{1}{2} KL(P \| M)} + {\frac{1}{2} KL(Q \| M)}} , M=\frac{1}{2}(P + Q))
 
 ![]({{ site.baseurl }}/images/wgan_graph.png)

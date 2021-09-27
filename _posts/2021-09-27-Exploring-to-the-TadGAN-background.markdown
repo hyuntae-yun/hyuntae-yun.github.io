@@ -13,10 +13,7 @@ GAN의 기본적인 loss function으로 부터 어떻게 KL divergence , JSD div
 
 ![formula](https://render.githubusercontent.com/render/math?math=KL(P \parallel Q)= \sum_xP(x)log\frac{P(x)}{Q(x)})
 
-
-![formula](https://render.githubusercontent.com/render/math?math={JSD}(P \| Q)={{\frac{1}{2} KL(P \| M)} %2B {\frac{1}{2} KL(Q \| M)}})
-
-
+![math (1)](https://user-images.githubusercontent.com/70379885/134938120-f130edd9-08aa-45e9-a266-dc2488ea42ec.png)
 
 ![]({{ site.baseurl }}/images/wgan_graph.png)
 
@@ -32,9 +29,6 @@ Wasserstein distance는 무엇일까?  이걸 보기 전에, 먼저 우리가 �
 (출처: https://www.codetd.com/en/article/12856575)
 
 하지만 Wasserstein distance는 좀 다릅니다.
-
-
-
 
 
 

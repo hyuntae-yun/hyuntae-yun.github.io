@@ -29,6 +29,7 @@ Wasserstein distance는 무엇일까?  이걸 보기 전에, 먼저 우리가 �
 ![]({{ site.baseurl }}/images/wgan.png)
 (출처: https://www.codetd.com/en/article/12856575)
 
+하지만 Wasserstein distance는 좀 다릅니다.
 
 
 

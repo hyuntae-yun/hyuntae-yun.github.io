@@ -15,7 +15,7 @@ GAN의 기본적인 loss function으로 부터 어떻게 KL divergence , JSD div
 
 ![formula](https://render.githubusercontent.com/render/math?math={JSD}(P \| Q)=\frac{1}{2} KL(P \| M) +\frac{1}{2} KL(Q \| M))
 
-![formula](https://render.githubusercontent.com/render/math?math=M=\frac{1}{2}(P+Q))
+![formula](https://render.githubusercontent.com/render/math?math=M=\frac{1}{2}(P \+ Q))
 
 
 ![]({{ site.baseurl }}/images/wgan_graph.png)

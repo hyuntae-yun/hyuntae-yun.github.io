@@ -11,17 +11,17 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 
  이상치 탐지를 하는 방법은 굉장히 여러가지가 존재하며 저는 그 중에서도 논문에서 소개한 세가지 방법을 먼저 소개 하려고 합니다.
  
- ###1. Proximity-based methods
+ ### 1. Proximity-based methods
  ![]({{ site.baseurl }}/images/Proximity.jpg)
  가장 먼저 근접도 기반 방법입니다. 우리가 주로 알고 있는 clutering이 대표적인데, 각 데이터 요소들간의 거리를 계산하고 이를 바탕으로 근접도를 판단을 합니다. 근접도가 커지면 커질수록 멀리 있다는 뜻이기 때문에 여러가지 제약조건을 통해서 outlier을 결정할 수 있습니다. 
 
 
-###2. Predict-based methods
+### 2. Predict-based methods
  ![]({{ site.baseurl }}/images/predict.jpg)
  예측 기반 방법입니다. ARIMA가 가장 대표적인데요, 시점  t-1까지의 데이터를 활용해서 시점 t를 예측합니다. 그리고 실제 값이 예측값과 얼마나 다른지를 보고 이상치인지 아닌지를 판별합니다. 세가지 방법중에서는 난이도가 가장 높은 편이라고 할 수 있습니다.
  
  
-###3. Reconstuction-based methods
+### 3. Reconstuction-based methods
  ![]({{ site.baseurl }}/images/reconstruction.png)
  재생성 기반 방법입니다. Auto Encoder이 가장 대표적입니다. 여러개의 특징(다변량 혹은 시계열데이터)을 Encoder을 통해 latent space로 압축시키고, 이후 Decoder을 통과해 원래 데이터로 복원하게 되는데 이때 Auto Encoder은 그 데이터의 특징을 학습한 상태임으로 이상치가 포함된 데이터라면 복원이 잘 되어있지 않을 것입니다. 그래서 복원된 데이터와 원본 데이터의 차이를 비교해서 이상치를 추정하게 됩니다.
 

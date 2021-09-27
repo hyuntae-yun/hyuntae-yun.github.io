@@ -11,7 +11,7 @@ Tadgan은 unsupervised machine learning으로, 원본 시계열 데이터로 부
 
  이상치 탐지를 하는 방법은 굉장히 여러가지가 존재하며 저는 그 중에서도 논문에서 소개한 세가지 방법을 먼저 소개 하려고 합니다.
  
- ### 1. Proximity-based methods
+### 1. Proximity-based methods
  
  ![]({{ site.baseurl }}/images/Proximity.jpg)
  

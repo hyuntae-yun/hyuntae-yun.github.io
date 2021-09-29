@@ -1,0 +1,15 @@
+2021-09-27-Exploring-to-the-TadGAN-background.markdown
+
+![]({{ site.baseurl }}/images/wgan_graph.png)
+![formula](https://render.githubusercontent.com/render/math?math=)
+---
+layout: post
+title:  "Exploring to the TadGAN-background"
+date:   2021-09-12 16:04:19 +0300
+image:  tadgan.png
+tags:   Tadgan,review
+--- 
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

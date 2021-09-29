@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exploring to the TadGAN-background"
+title:  "Exploring to the TadGAN-Wasserstein distance"
 date:   2021-09-12 16:04:19 +0300
 image:  tadgan.png
 tags:   Tadgan,review
@@ -46,9 +46,12 @@ X,Y에 대해서 각 원소들이 뽑힐 확률이 uniform(모두다 균일)이�
 
 이 계산식은 EM distance, Wasserstein-1 이라고 불리는 거리계산 방법입니다. 언뜻 보면 어려워 보일 수 있지만 집합 r과 집합 g에서 사건이 동시에 발생할 때 가능한 모든 확률들 중에서,L2 norm 공식을 적용했을 때 임의로 선택된 x,y의 확률의 차이와 값의 차이가 가장 작은 것을 Wasserstein distance라고 정하기로 한 것입니다. 그렇다면 이제 우리는 우리가 처음에 말했던,  "왼쪽 부분은 왼쪽 부분 끼리, 오른쪽 부분은 오른쪽 부분끼리 같아지도록 만들어줘야"라는 의미가 무엇인지 생각해볼 수 있습니다. 물론 이렇게 확률을 변화시키지 않아도 되지만 최대한 근접하게 확률을 변화해야만 Wasserstein distance를 구하기 수월해 집니다.
 
+### 
+
+
 ### 결론
 
- 사실 기존에 사용하던 확률거리함수 보다는 Wasserstein distance를 사용해야 모델 학습을 제대로 할 수 있다! 라는 짧은 말로 끝내도 되지만 우리가 원하는 것은 TadGAN에 대한 깊은 이해이기 때문에 TadGAN이 어떤 이유에서 wgan-gp 손실함수를 썼는지에 대해서 알 필요가 있었습니다. 이후에도 wgan-gp를 설명해야 하지만, 설명하기 위해서는 하나의 논문을 설명해야 하니 관심 있으신 분들은 Improved Training of Wasserstein GANs(https://arxiv.org/abs/1704.00028) 논문을 참고하시면 되겠습니다.
+loss function을 사용할 때, 기존의 GAN에 적용하던 확률거리함수(KL, JSD) 보다는 Wasserstein distance를 사용해야 모델이 학습을 잘 하게 되는데, 그 이유는 KL, JSD 발산은 서로 다른 값을 뽑을 확률에 대한 계산을 하게 되면 특정 값이나 무한대의 값을 측정하기 때문에 학습이 제대로 이루어지지 않는다. 하지만 Wasserstein distance는 서로 다른 값을 뽑을 확률에 대해서 그 확률에 상관 없이 가변적인 값을 도출해 내기 때문에 손실 함수의 거리 계산으로 적합하다는 내용 입니다. 이 Wasserstein distance를 사용한 GAN을 wgan이라고 하는데, 이 wgan도 조금 문제가 있어서 wgan-gp라는 손실 함수가 새로 나오게 되었습니다.
  
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

@@ -48,7 +48,7 @@ X,Y에 대해서 각 원소들이 뽑힐 확률이 uniform(모두다 균일)이�
 
 ### wgan-gp
 
-wasserstein distance를 이용한 wasserstein loss로 충분해보이지만, 사실은 그렇지 않았습니다. 우리는 이것을 다룬 논문을 통해 확인해 볼 수 있습니다. 따라서 TadGAN의 저자는 wgan의 학습 정확도를 향상시긴 wgan-gp를 사용한다고 명시해 놓았습니다.
+자, 우리는 기본적인 GAN loss function의 한계를 알아보았고, 왜 KL, JSD divergnece를 사용해서 학습을 하면 안되는지, 그리고 그 것을 극복하기 위해서 어떤 확률거리 함수를 새롭게 사용해야 했는 지를 알아보았습니다. 실제로 tadgan 논문의 5쪽을 보면 일반적으로 GAN에서 사용하는 loss function과, 저자가 학습이 잘 되지 않는 이슈 때문에 wgan-gp를 사용하겠다는 내용이 나옵니다. 그리고 Wasserstein loss는 1-Lipschitz continuous function 조건(||f(x1) − f(x2)|| ≤ K||x1 − x2||, ∀x1, x2 ∈ dom f) 을 만족 시키기 때문에 어느정도 기울기에 대한 변화를 제어할 수 있습니다. 여기까지 보면보면 wasserstein distance를 이용한 wasserstein loss로 충분해보이지만, 사실은 그렇지 않았습니다. 우리는 이것을 다룬 논문( Improved Training of Wasserstein GANs:https://arxiv.org/abs/1704.00028)을 통해 확인해 볼 수 있습니다. 1-Lipschitz  조건을 만족하긴 하지만, 이것 역시 아직 gredient 변화에 대해서 적절히 반응하지 못합니다. 
 
 ### 결론
 

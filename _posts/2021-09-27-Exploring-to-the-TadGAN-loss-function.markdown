@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exploring to the TadGAN-wgan gp"
+title:  "Exploring to the TadGAN-loss function"
 date:   2021-09-12 16:04:19 +0300
 image:  tadgan.png
 tags:   Tadgan,review

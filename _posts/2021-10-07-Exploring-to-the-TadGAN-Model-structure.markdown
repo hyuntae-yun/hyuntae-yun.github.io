@@ -45,6 +45,9 @@ Phase 4 입니다.  실제 데이터를 Generator E에 통과 시킨 latent spac
 
 Generator G(Decoder) Loss function =mse_loss(x,gen_x)+critic_score_valid_x - critic_score_fake_x
 
+위의 과정은 차례대로  encoder_iteration,decoder_iteration critic_x_iteration, 그리고 critic_z_iteration로 소스코드에 포함되어 있습니다. 코드를 보고 천천히 따라가시면 어떻게 모델이 작동하는 건지 잘알 수 있게 됩니다. 
+
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/

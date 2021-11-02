@@ -3,7 +3,7 @@ layout: post
 title:  "Liquid Time-constant Networks-intro.markdown
 "
 date:   2021-11-02 22:01:00 +0300
-image:  tliquid network.png
+image:  tliquidnetwork.png
 tags:   Liquid Time-constant Networks,review
 ---
 

@@ -116,6 +116,19 @@ CNN의 ATTention Map을 보시면, 길이 아니라 길의 주변 부에 집중�
 
 ![ctd](https://user-images.githubusercontent.com/70379885/155934175-383ec54e-d062-4ca5-a8c2-56eb95831432.jpg)
 
+저자가 제시한 cdn은 최근에  Neural ODE, 혹은 ODE-Net 등으로 알려진 방법을 차용하는 것 이었습니다. 실제 뇌에서 
+
+모든 신호가 이산적이 아닌 연속적으로 신호를 내보내기 때문에 그 미묘한 차이와 정확도를 높이기 위해서는 모델도 그럴 
+
+필요성을 느꼈는데, 여기서 소개하는 ODE Network는 그런 작업을 수행하기에 가장 적합한 모델이었습니다. 쉽게 설명하자면
+
+우리가 많이 알고 있는 RES-Net(Residual Network)이 이산적인 결과(n,n+1,n+2...)를 나타낸다면, ODE Network는 미분값을
+
+사용해서 연속적인 함수의 형태를 예측할 수 있게 됩니다. 그리고 이미지를 보면 좀더 명확해 지지만, 필요하다고 생각되면
+
+ODE Network는 이산적인 계산보다 더 많은 지점을 자유롭게 연산 시킬 수 있습니다. 
+
+![ctd2](https://user-images.githubusercontent.com/70379885/155937717-952a912a-0d68-4fa1-9c49-0ef53dcf18cd.png)
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

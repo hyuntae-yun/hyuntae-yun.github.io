@@ -113,7 +113,8 @@ CNN의 ATTention Map을 보시면, 길이 아니라 길의 주변 부에 집중�
  
  ##3. continuous-time/depth neural network는 무엇일까?
  
-![ctd](https://user-images.githubusercontent.com/70379885/155933552-14bbb108-7563-4bd3-b544-68486ff55c2d.png)
+
+![ctd](https://user-images.githubusercontent.com/70379885/155934175-383ec54e-d062-4ca5-a8c2-56eb95831432.jpg)
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home

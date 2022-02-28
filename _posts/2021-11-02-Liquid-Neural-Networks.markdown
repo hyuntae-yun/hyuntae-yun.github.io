@@ -111,7 +111,7 @@ CNN의 ATTention Map을 보시면, 길이 아니라 길의 주변 부에 집중�
 
  위의 목표를 달성 시키기 위해, 저자는 continuous-time/depth neural network를 제시했습니다.
  
- ##3. continuous-time/depth neural network는 무엇일까?
+ ## 3. continuous-time/depth neural network는 무엇일까?
  
 
 ![ctd](https://user-images.githubusercontent.com/70379885/155934175-383ec54e-d062-4ca5-a8c2-56eb95831432.jpg)
@@ -129,6 +129,32 @@ CNN의 ATTention Map을 보시면, 길이 아니라 길의 주변 부에 집중�
 ODE Network는 이산적인 계산보다 더 많은 지점을 자유롭게 연산 시킬 수 있습니다. 
 
 ![ctd2](https://user-images.githubusercontent.com/70379885/155937717-952a912a-0d68-4fa1-9c49-0ef53dcf18cd.png)
+
+그리고 ODE를 좀 더 진화 시켜서, 감쇠계수(dumping factor)가 존재하는 Continuous-time(CT) RNN이 기존의RNN과 비교해서 
+
+더 좋은 성능을 보이는 것을 볼 수 있습니다.
+
+
+## 4. 어떤식으로 구현 했을까?
+
+
+![ctd3](https://user-images.githubusercontent.com/70379885/155940070-5d49946a-da44-4f90-8df5-a575d996f524.png)
+
+가장 먼저, unrolled, 그러니까 time stamp 중에서 하나의 시점에 대한 RNN만 생각해보도록 합니다. 그걸 바탕으로 
+
+forward path를 구성하는데, 어떤 ODE를 선택하느냐에 따라 모델의 복잡도가 정해집니다. 더 복잡한 ODE Solver을 사용할 수록
+
+더 정확한 forward path를 가질 수 있습니다.
+
+그리고 backward path는 Adjoint Sensitivity Method를 사용하는데, Argumented ODE 논문을 참고하시면 보다 정확한 설명을
+
+보실 수 있습니다. 
+
+
+
+
+ 
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

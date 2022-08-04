@@ -15,3 +15,10 @@ tags:   time series,analysis
 1. 데이터의 종류
 
  시계열 데이터는 굉장히 많은 데이터가 존재한다. 시계열 데이터라고 함은 말 그대로 데이터에 시계열이 항상 포함되는 것이며, 따라서 순서에 영향을 받는다. 
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

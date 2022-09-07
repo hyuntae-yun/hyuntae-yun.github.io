@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "None rotating body Time Series Analysis Methodology"
-date:   2022-10-08 11:47:55 +0300
+date:   2022-08-04 11:47:55 +0300
 image:  time-series.png
 tags:   time series,analysis
 ---

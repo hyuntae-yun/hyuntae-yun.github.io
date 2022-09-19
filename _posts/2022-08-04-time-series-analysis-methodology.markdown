@@ -43,7 +43,7 @@ tags:   time series,analysis
  
 ## 데이터 분석적인 측면에서 바라보기
 
- 당신이 시계열 데이터를 분석한다고 합시다. 우선 현존하는 분석 방법 중 대부분은 '예측'을 추천할 것입니다. 예측 모델은 'ARIMA', 'xgboost' ,'	Exponential Smoothing' 등이 있을 것 입니다. 이런 방법들은 이상치 탐지, 예측등을 수행하는 데 적합합니다. 
+ 당신이 시계열 데이터를 분석한다고 합시다. 우선 현존하는 분석 방법 중 대부분은 '예측'을 추천할 것입니다. 예측 모델은 'ARIMA', 'xgboost' ,'	Exponential Smoothing' 등이 있을 것 입니다. 이런 방법들은 이상치 탐지, 예측등을 수행하는 데 적합합니다. 하지만 문제가 있습니다. 비회전체의 주기가 회전체 만큼 짧으면 상관 없지만, 적게는 2~3시간, 많게는 하루 단위로 반복되는 데이터들은 학습을 하기가 쉽지 않다. 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
